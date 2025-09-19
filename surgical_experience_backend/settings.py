@@ -126,7 +126,7 @@ USE_TZ = True
 
 # Allow React dev server
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://expoqr.netlify.app/",
     "http://127.0.0.1:3000",
 ]
 
