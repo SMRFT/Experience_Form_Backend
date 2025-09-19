@@ -20,7 +20,7 @@ urlpatterns = [
 
     # Stess Who
     path("stress/submit/", views.submit_stress, name="submit_stress"),
-    path("stresswho/list/", views.list_stresswho, name="list_stresswho"),
+    path("stress/list/", views.list_stress, name="list_stress"),
     path("who/submit/", views.submit_who, name="submit_who"),
-
+    path("who/list/", views.list_who, name="list_who"),
 ]
