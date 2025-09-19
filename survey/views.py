@@ -269,20 +269,20 @@ def submit_stress(request):
 
 @api_view(["POST"])
 def submit_who(request):
-    serializer = StressFormSerializer(data=request.data)
+    serializer = WHOFormSerializer(data=request.data)
     if serializer.is_valid():
         form = serializer.save()
         return Response(WHOFormSerializer(form).data, status=201)
     return Response(serializer.errors, status=400)
 
 @api_view(["GET"])
-def list_stresswho(request):
+def list_stress(request):
     forms = StressForm.objects.all().order_by("-created_at")
     serializer = StressFormSerializer(forms, many=True)
     return Response(serializer.data)
 
 @api_view(["GET"])
-def list_stresswho(request):
+def list_who(request):
     forms = WHOForm.objects.all().order_by("-created_at")
     serializer = WHOFormSerializer(forms, many=True)
     return Response(serializer.data)
