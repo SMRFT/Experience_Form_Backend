@@ -128,6 +128,7 @@ USE_TZ = True
 CORS_ALLOWED_ORIGINS = [
     "https://expoqr.netlify.app",
     "http://127.0.0.1:3000",
+    "http://localhost:3000/"
 ]
 
 # If you want to allow *everything* during dev:
